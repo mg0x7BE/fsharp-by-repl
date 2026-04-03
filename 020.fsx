@@ -1,4 +1,7 @@
 // 020.fsx
+// Why Sequences?
+// Lists compute everything upfront. Sequences are lazy — they compute on demand.
+// This means you can work with huge or even infinite data without running out of memory.
 
 // Sequences (seq)
 // Sequences are lazy evaluated collections - elements are computed only when needed.

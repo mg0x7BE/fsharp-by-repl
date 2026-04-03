@@ -1,4 +1,7 @@
 ﻿// 004.fsx
+// Why Higher-Order Functions?
+// Passing functions as arguments lets you write reusable, composable code.
+// Instead of repeating logic, you parameterize behavior itself.
 
 // Higher-Order Functions
 // Functions can take other functions as parameters.

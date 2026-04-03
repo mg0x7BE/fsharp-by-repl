@@ -1,11 +1,14 @@
 ﻿// 025.fsx
+// Why Active Patterns?
+// Regular pattern matching works on built-in types (lists, tuples, DUs).
+// Active patterns let you define your OWN matching logic — extending the language.
 
 // Active Patterns
 // Active patterns let you create custom pattern matching cases.
 // They make pattern matching more expressive and reusable.
 
-// Single-case Active Pattern
-// Syntax: let (|PatternName|) input = result
+// Complete Active Pattern (multi-case)
+// Syntax: let (|Case1|Case2|) input = Case1 or Case2
 
 let (|Even|Odd|) n =
     if n % 2 = 0 then Even

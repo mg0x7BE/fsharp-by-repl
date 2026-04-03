@@ -1,4 +1,7 @@
 ﻿// 002.fsx
+// Why Pattern Matching & Recursion?
+// Pattern matching replaces if/else chains with clear, exhaustive case handling.
+// Recursion replaces loops — in functional programming, data flows through functions.
 
 // String Operations
 let name = "Alice"

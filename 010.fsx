@@ -1,4 +1,7 @@
 ﻿// 010.fsx
+// Why Option?
+// Most languages use null, which causes runtime crashes (NullReferenceException).
+// F# uses Option to force you to handle "no value" at compile time — no surprises.
 
 // Option Type
 // F# doesn't have null by default. Instead, we use Option to represent "maybe has a value".

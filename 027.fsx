@@ -72,8 +72,10 @@ let (evens3, odds3) = List.partition (fun x -> x % 2 = 0) numbers
     4. Print both results in format:
        "Greater than 15: count={count}, sum={sum}"
        "15 or less: count={count}, sum={sum}"
+
+    Hint: the sum of all numbers is 148.
     
     Expected output:
     - Greater than 15: count=4, sum=100  (23, 19, 31, 27)
-    - 15 or less: count=6, sum=63  (12, 7, 4, 8, 15, 2)
+    - 15 or less: count=6, sum=48  (12, 7, 4, 8, 15, 2)
 *)

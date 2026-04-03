@@ -1,4 +1,7 @@
 ﻿// 014.fsx
+// Why Records?
+// Records give your data named fields — much clearer than tuples.
+// They're immutable by default, so you always know your data won't change unexpectedly.
 
 // Records
 // Records are like tuples but with named fields.

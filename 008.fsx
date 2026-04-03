@@ -1,4 +1,7 @@
 ﻿// 008.fsx
+// Why Partial Application?
+// Instead of writing new wrapper functions, you "configure" existing ones
+// by fixing some arguments. This makes code shorter and more expressive.
 
 // Partial Application
 // In F#, functions are curried by default.

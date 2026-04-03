@@ -1,4 +1,7 @@
 ﻿// 016.fsx
+// Why Result?
+// Option tells you "something or nothing", but not WHY it failed.
+// Result carries an error message, so callers know exactly what went wrong.
 
 // Result Type
 // Result is a built-in type for operations that can fail with an error message.

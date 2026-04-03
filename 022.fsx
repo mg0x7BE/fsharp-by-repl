@@ -45,8 +45,8 @@ let byLength =
     wordLengths
     |> List.groupBy (fun word -> word.Length)
     |> List.map (fun (length, words) -> (length, List.length words))
-// Result: [(3, 4); (8, 1); (4, 1)]
-// 4 words with length 3, 1 word with length 8, 1 word with length 4
+// Result: [(3, 3); (8, 1); (4, 2)]
+// 3 words with length 3, 1 word with length 8, 2 words with length 4
 
 
 (*

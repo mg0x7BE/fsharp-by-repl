@@ -1,4 +1,7 @@
 // 029.fsx
+// Why Accumulators?
+// Simple recursion builds up a chain of pending operations (stack frames).
+// The accumulator pattern processes as it goes — constant memory, no stack overflow.
 
 // Recursion with Accumulator Pattern
 // The accumulator pattern collects results as we go through the list.

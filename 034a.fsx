@@ -77,12 +77,12 @@ let top3ProductsFormatted =
     |> List.map (fun (number, (productName, productPrice)) ->  $"  {number}. {productName}: ${productPrice:F2}")
     |> String.concat "\n"
     
-printfn $"Total Revenue: ${totalRevenue salesData}"
-printfn $"Most Expensive: {mostExpensiveProduct.ProductName} (${mostExpensiveProduct.Price})\n"
-printfn $"Revenue by Category:"
+printfn $"Total Revenue: ${totalRevenue salesData:F2}"
+printfn $"Most Expensive: {mostExpensiveProduct.ProductName} (${mostExpensiveProduct.Price:F2})\n"
+printfn "Revenue by Category:"
 printfn $"{totalRevenuePerCategory}"
-printfn $""
-printfn $"Top 3 Products by Revenue:"
+printfn ""
+printfn "Top 3 Products by Revenue:"
 printfn $"{top3ProductsFormatted}"
 
 (* OUTPUT:
