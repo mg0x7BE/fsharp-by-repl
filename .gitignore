@@ -429,3 +429,6 @@ cmake-build-debug/
 *.dSYM/
 *.o
 *.exe
+
+# Claude
+.claude/
