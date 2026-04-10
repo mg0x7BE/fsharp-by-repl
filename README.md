@@ -57,7 +57,7 @@ You can also ask [Claude](https://claude.ai) to generate the next exercises for 
 | 030 | Real-world data processing |
 | 031-033 | groupBy deep dive |
 | **034** | **PROJECT: CSV Sales Data Analyzer** |
-| **035** | **PROJECT: TODO List Manager (CLI)** |
+| **035** | **PROJECT: Task List Manager** |
 
 ### Block 2: Practical F# (~036-050) — Planned
 
