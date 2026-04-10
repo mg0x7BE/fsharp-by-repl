@@ -95,8 +95,9 @@ The exercises follow a learning path organized in blocks. Each block ends with a
 - **034: PROJECT — CSV Sales Data Analyzer**
 - **035: PROJECT — Task List Manager**
 
-### Block 2: Practical F# (~036-050) — PLANNED
-- 036-037: Map (dictionary-like data structure)
+### Block 2: Practical F# (~036-050) — IN PROGRESS
+- 036: Map basics (Map.ofList, find, tryFind, add, remove, count)
+- 037: Map transformations (Map.map, Map.filter, Map.fold)
 - 038: Set
 - 039: Array operations
 - 040-041: String processing (split, join, trim, regex basics)

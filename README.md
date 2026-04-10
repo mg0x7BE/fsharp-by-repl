@@ -59,10 +59,14 @@ You can also ask [Claude](https://claude.ai) to generate the next exercises for 
 | **034** | **PROJECT: CSV Sales Data Analyzer** |
 | **035** | **PROJECT: Task List Manager** |
 
-### Block 2: Practical F# (~036-050) — Planned
+### Block 2: Practical F# (~036-050) — In Progress
 
-Map/Dictionary, Set, Arrays, String processing, Railway Oriented Programming,
-Modules, and a mini-project.
+| # | Topic |
+|---|-------|
+| 036 | Map basics (ofList, find, tryFind, add, remove) |
+
+*Coming next: Map transformations, Set, Arrays, String processing, Railway Oriented Programming,
+Modules, and a mini-project.*
 
 ### Block 3: Real-World F# (~048-065) — Planned
 
