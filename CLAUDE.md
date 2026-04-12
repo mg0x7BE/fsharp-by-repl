@@ -130,6 +130,12 @@ When asked to create the next exercise(s):
 7. Always verify expected output by calculating manually
 8. Match the style and tone of existing exercises exactly
 
+**IMPORTANT: Only create the exercise file (NNN.fsx), NEVER commit a solution file (NNNa.fsx)
+to the repo.** Solution files are written by the user as their answer.
+You may temporarily create a solution file to verify expected output via `dotnet fsi`,
+but you MUST delete it before finishing. The repo should only contain exercise files
+and user-written solutions.
+
 **CRITICAL RULE: Tasks may ONLY use concepts that have already been taught in previous exercises
 or in the teaching section of the current exercise. Never require the student to know something
 that hasn't been introduced yet. The progression list above is the single source of truth
