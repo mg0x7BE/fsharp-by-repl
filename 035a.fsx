@@ -52,7 +52,7 @@ let myTasks =
     |> completeTask 4
     |> removeTask 3
 
-printfn "%s" (listTasks myTasks)
+printfn $"{listTasks myTasks}"
 printfn ""
 printfn "Statistics:"
 printfn $"Total tasks: %d{List.length myTasks}"
