@@ -1,4 +1,4 @@
-﻿// 032.fsx
+// 032.fsx
 
 // List.groupBy with Records
 // Now let's use groupBy with real data structures (like in real projects)

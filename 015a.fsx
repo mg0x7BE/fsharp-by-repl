@@ -1,4 +1,4 @@
-﻿type PaymentMethod =
+type PaymentMethod =
     | Cash
     | Card of cardNumber: string
     | BankTransfer of accountNumber: string

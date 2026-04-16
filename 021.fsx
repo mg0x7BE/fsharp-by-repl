@@ -1,4 +1,7 @@
 // 021.fsx
+// Why List.choose?
+// Filtering and mapping in two passes is verbose when the mapping itself can fail.
+// choose merges them: transform once, keep only the Some results.
 
 // List.choose
 // List.choose combines map and filter: transform elements and keep only Some results.

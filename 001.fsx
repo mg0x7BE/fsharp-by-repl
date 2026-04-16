@@ -1,4 +1,4 @@
-﻿// 001.fsx
+// 001.fsx
 // Why Functions & Pipes?
 // Functions are the building blocks of F#. Pipes (|>) let you read code
 // left-to-right like a sentence, instead of nesting parentheses.

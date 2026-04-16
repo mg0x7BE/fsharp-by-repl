@@ -1,4 +1,4 @@
-﻿type TaskStatus =
+type TaskStatus =
     | Pending
     | Completed
 

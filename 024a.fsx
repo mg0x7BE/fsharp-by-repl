@@ -1,4 +1,4 @@
-﻿type BookId = int
+type BookId = int
 type BookTitle = string
 type PageCount = int
 

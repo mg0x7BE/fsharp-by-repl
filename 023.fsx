@@ -1,4 +1,7 @@
-﻿// 023.fsx
+// 023.fsx
+// Why List.sortBy?
+// Sorting by a derived key (length, age, price) is the common case.
+// sortBy lets you name the key with a lambda instead of writing a comparer.
 
 // List.sortBy and List.sortByDescending
 // List.sortBy sorts a list by a key function (ascending order).

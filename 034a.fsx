@@ -1,4 +1,4 @@
-﻿let csvData =
+let csvData =
     """ProductName,Category,Price,Quantity
 Laptop,Electronics,999.99,5
 Mouse,Electronics,25.50,15

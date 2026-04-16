@@ -1,4 +1,4 @@
-﻿let multiplyPositive list =
+let multiplyPositive list =
    let rec loop acc remaining =
        match remaining with
        | [] -> acc

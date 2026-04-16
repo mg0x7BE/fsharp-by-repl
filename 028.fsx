@@ -1,4 +1,7 @@
-﻿// 028.fsx
+// 028.fsx
+// Why List.zip?
+// Parallel lists (names + ages, keys + values) are awkward to process apart.
+// zip pairs them up so you can use every list operation you already know.
 
 // List.zip and List.unzip
 // List.zip combines two lists into a list of tuples.

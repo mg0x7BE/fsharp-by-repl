@@ -1,4 +1,4 @@
-﻿// 031.fsx
+// 031.fsx
 
 // Understanding List.groupBy - Step by Step
 // groupBy splits a list into groups based on a key function.

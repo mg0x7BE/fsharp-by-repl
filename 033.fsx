@@ -1,4 +1,4 @@
-﻿// 033.fsx
+// 033.fsx
 
 // Advanced groupBy - Filtering After Grouping
 // This is what was hard in lesson 030 - let's break it down!

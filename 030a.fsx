@@ -1,4 +1,4 @@
-﻿type OrderStatus =
+type OrderStatus =
     | Pending
     | Shipped
     | Delivered

@@ -1,4 +1,4 @@
-﻿let parseAge (str: string) =
+let parseAge (str: string) =
     let success, value = System.Int32.TryParse str
     if success then
         if value > 0 then

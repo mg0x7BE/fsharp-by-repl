@@ -1,4 +1,4 @@
-﻿let (|Positive|Zero|Negative|) number =
+let (|Positive|Zero|Negative|) number =
     if number > 0 then Positive
     elif number = 0 then Zero
     else Negative

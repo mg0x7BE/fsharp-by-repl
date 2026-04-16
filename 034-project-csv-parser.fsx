@@ -1,4 +1,4 @@
-﻿// 034-project-csv-parser.fsx
+// 034-project-csv-parser.fsx
 
 // PROJECT: CSV Sales Data Analyzer
 // You work for a small company and need to analyze sales data from a CSV file.

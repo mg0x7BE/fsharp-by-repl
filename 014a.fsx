@@ -1,4 +1,4 @@
-﻿type Book = {
+type Book = {
     Title: string
     Pages: int
 }

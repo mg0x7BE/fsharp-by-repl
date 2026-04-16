@@ -1,4 +1,4 @@
-﻿type Student = {
+type Student = {
    Name: string
    Courses: string list
 }

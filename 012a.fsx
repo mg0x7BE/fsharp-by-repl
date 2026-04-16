@@ -1,4 +1,4 @@
-﻿// 012a.fsx
+// 012a.fsx
 
 let safeDivide x y =
     if y = 0 then None

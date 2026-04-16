@@ -1,4 +1,4 @@
-﻿let list1 = [1; 3; 5; 8; 9; 10]
+let list1 = [1; 3; 5; 8; 9; 10]
 let list2 = [1; 50; 75; 90]
 
 let isEven x = x % 2 = 0

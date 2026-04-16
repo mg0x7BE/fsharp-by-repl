@@ -1,4 +1,4 @@
-﻿
+
 let inventory = [("Apples", 50); ("Bananas", 30); ("Oranges", 45); ("Grapes", 20)] |> Map.ofList
 
 let checkStock (product: string) (inv: Map<string, int>) =

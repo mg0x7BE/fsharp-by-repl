@@ -1,4 +1,4 @@
-﻿// 026.fsx
+// 026.fsx
 
 // List.collect Revisited
 // We used List.collect briefly in lesson 007, but let's explore it deeper.

@@ -1,4 +1,4 @@
-﻿let rec countElements list =
+let rec countElements list =
     match list with
     | [] -> 0
     | _ :: tail -> 1 + countElements tail

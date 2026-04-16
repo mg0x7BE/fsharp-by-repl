@@ -1,4 +1,4 @@
-﻿let list = [2; 3; 4]
+let list = [2; 3; 4]
 
 let result1 =
     list

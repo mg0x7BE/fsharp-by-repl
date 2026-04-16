@@ -1,4 +1,4 @@
-﻿let numbers = [12; 7; 23; 4; 19; 8; 31; 15; 2; 27]
+let numbers = [12; 7; 23; 4; 19; 8; 31; 15; 2; 27]
 
 let (big, small) =
    numbers

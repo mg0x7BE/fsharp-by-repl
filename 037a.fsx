@@ -1,4 +1,4 @@
-﻿let salaries =
+let salaries =
     Map.ofList [
         ("Alice", 4200.0)
         ("Bob", 5800.0)

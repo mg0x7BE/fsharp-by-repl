@@ -1,4 +1,4 @@
-﻿type Product = {
+type Product = {
     Id: int
     Name: string
     Category: string

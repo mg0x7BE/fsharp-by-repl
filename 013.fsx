@@ -1,4 +1,4 @@
-﻿// 013.fsx
+// 013.fsx
 // Why Tuples?
 // Tuples let you group values without defining a new type.
 // Perfect for returning multiple values from a function.

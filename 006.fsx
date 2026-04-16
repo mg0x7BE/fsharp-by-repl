@@ -1,4 +1,4 @@
-﻿// 006.fsx
+// 006.fsx
 
 // Recap: Combining List operations
 // You can chain multiple operations using the pipe operator.

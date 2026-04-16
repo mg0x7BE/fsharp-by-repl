@@ -1,4 +1,4 @@
-﻿let rec applyToList f list =
+let rec applyToList f list =
     match list with
     | [] -> []
     | head :: tail -> 
