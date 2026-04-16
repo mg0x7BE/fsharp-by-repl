@@ -114,16 +114,16 @@ let backToList = Set.toList fruits
 
     5. Check if inBoth is a subset of mathStudents.
 
-    6. Use Set.filter on allStudents to get names that start with
-       a letter in the range 'A'..'E'. Store as earlyAlphabet.
+    6. Use Set.filter on allStudents to get names that start with "A".
+       Store as earlyAlphabet.
 
-    7. Use Set.fold on allStudents to build a comma-separated string
-       of all student names.
-       Hint: you can fold with a trailing separator and trim it at the end,
-       just like the summary example in 037:
-         Map.fold (fun acc name qty -> acc + $"...") "" stock |> fun s -> s.Trim()
+    7. Use Set.fold on allStudents to build a space-separated summary string
+       of all student names, like: "Alice Bob Carol ..."
+       Hint: same pattern as the summary example in 037 -
+       fold with a trailing space, then .Trim() at the end.
 
-    8. Print all results. Use Set.toList where needed for display.
+    8. Print all results. For Sets, convert to list with Set.toList
+       and print with %A.
 
     Expected output:
     Math students: ["Alice"; "Bob"; "Carol"; "Dave"; "Eve"]
@@ -132,7 +132,6 @@ let backToList = Set.toList fruits
     Math only: ["Alice"; "Carol"; "Eve"]
     All students: ["Alice"; "Bob"; "Carol"; "Dave"; "Eve"; "Frank"; "Grace"]
     Both is subset of math? True
-    Early alphabet (A-E): ["Alice"; "Bob"; "Carol"; "Dave"; "Eve"]
-    All students: Alice, Bob, Carol, Dave, Eve, Frank, Grace
+    Starts with A: ["Alice"]
+    All students: Alice Bob Carol Dave Eve Frank Grace
 *)
-

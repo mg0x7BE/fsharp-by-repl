@@ -17,6 +17,9 @@ Each "block" of exercises covers a theme and ends with a mini-project that integ
 
 ```fsharp
 // NNN.fsx
+// Why TopicName?                           // optional, see rule below
+// One line of motivation for the concept.
+// Second line clarifying what it buys you.
 
 // Topic Name
 // Brief explanation of the concept
@@ -40,6 +43,9 @@ let example2 = ...
 
 Key rules:
 - Start with `// NNN.fsx` header comment
+- Include a 2-3 line `// Why TopicName?` intro ONLY when the exercise introduces a
+  new standalone concept. Skip it for recaps, continuations, revisits, combining
+  exercises, and projects. When in doubt, check nearby exercises for the pattern.
 - Teaching section comes first with practical, runnable examples
 - Task is inside a block comment `(* ... *)`
 - Include expected output so the user can verify their solution
@@ -55,6 +61,19 @@ Key rules:
 - Use `:F2` format specifier for currency/float display
 - Prefer idiomatic F# (pattern matching without redundant guards, `if/else` for simple conditions)
 - End with printing the result
+
+## Writing Style and Typography
+
+Use ASCII punctuation everywhere: exercise files, solution files, README, CLAUDE.md,
+commit messages, and any other output. The user has explicitly rejected the following
+Unicode characters as LLM-signature typography:
+
+- Em-dash (U+2014). Use a regular hyphen `-` instead.
+- En-dash (U+2013). Use a regular hyphen `-` instead.
+- Arrows (U+2190 through U+2193 and similar). Use `->`, `<-`, `^`, `v`, or plain
+  English words like "then" or "becomes".
+
+Keep all files as UTF-8 without BOM. Do not emit a BOM at the start of any file.
 
 ## Progression Design
 
@@ -261,6 +280,8 @@ before presenting it.
    - `{ record with Field = value }` - taught in 014 (Records)
    - `List.head`, `List.tail` - taught in 003 (Lists)
    - `sprintf` / `String.Format` - not taught
+   - char indexing (`s.[0]`), char comparison (`'A' <= c`) - not taught until ~040
+   - `.StartsWith` - shown in 037 (Map.filter example), usable from 037+
      If something wasn't taught, either add an inline explanation or remove it.
 
 6. **Is the step order top-down?** - read the steps in order. If the student writes code
