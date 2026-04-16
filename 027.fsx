@@ -1,4 +1,7 @@
-﻿// 027.fsx
+// 027.fsx
+// Why List.partition?
+// Sometimes you need BOTH halves - the matches AND the rest.
+// partition runs the predicate once and gives you both, instead of filtering twice.
 
 // List.partition
 // List.partition splits a list into two lists based on a predicate.

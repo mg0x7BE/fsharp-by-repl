@@ -1,7 +1,7 @@
-﻿// 003.fsx
+// 003.fsx
 // Why Lists?
 // Lists are the most common data structure in functional programming.
-// Unlike arrays, F# lists are immutable — you build new lists instead of modifying old ones.
+// Unlike arrays, F# lists are immutable - you build new lists instead of modifying old ones.
 
 // List literal (semicolons, not commas!)
 let numbers = [1; 2; 3; 4; 5]

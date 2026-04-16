@@ -1,7 +1,7 @@
-﻿// 025.fsx
+// 025.fsx
 // Why Active Patterns?
 // Regular pattern matching works on built-in types (lists, tuples, DUs).
-// Active patterns let you define your OWN matching logic — extending the language.
+// Active patterns let you define your OWN matching logic - extending the language.
 
 // Active Patterns
 // Active patterns let you create custom pattern matching cases.

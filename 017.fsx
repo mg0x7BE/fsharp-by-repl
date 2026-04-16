@@ -1,6 +1,6 @@
-﻿// 017.fsx
+// 017.fsx
 // Why List.fold?
-// fold is the most powerful list operation — map, filter, sum, count, reverse
+// fold is the most powerful list operation - map, filter, sum, count, reverse
 // can ALL be implemented with fold. It's the Swiss Army knife of functional programming.
 
 // List.fold

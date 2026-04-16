@@ -1,4 +1,7 @@
-﻿// 012.fsx
+// 012.fsx
+// Why Option.bind?
+// When a transformation itself returns an Option, map gives you Option<Option<T>>.
+// bind flattens that - failures short-circuit, happy paths chain cleanly.
 
 // Option.bind
 // Use when your transformation function ALSO returns an Option

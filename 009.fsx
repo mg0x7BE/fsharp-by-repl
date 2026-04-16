@@ -1,6 +1,6 @@
 // 009.fsx
 // Why Function Composition?
-// Composition (>>) lets you build new functions by chaining existing ones —
+// Composition (>>) lets you build new functions by chaining existing ones -
 // like LEGO bricks. The result is a new function, not an immediate value.
 
 // Function Composition

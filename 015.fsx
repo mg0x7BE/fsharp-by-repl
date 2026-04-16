@@ -1,6 +1,6 @@
-﻿// 015.fsx
+// 015.fsx
 // Why Discriminated Unions?
-// DUs model data that can be "one thing OR another" — like payment methods or shapes.
+// DUs model data that can be "one thing OR another" - like payment methods or shapes.
 // The compiler ensures you handle ALL cases, so you can't forget one.
 
 // Discriminated Unions (DUs)

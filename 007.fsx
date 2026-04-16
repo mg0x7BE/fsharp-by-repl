@@ -1,4 +1,7 @@
-﻿// 007.fsx
+// 007.fsx
+// Why List.collect?
+// Mapping sometimes produces lists of lists - then you need to flatten them.
+// List.collect does both in one step, so you avoid messy nested structures.
 
 // List.collect (flatMap)
 // Sometimes you want to transform each element into a LIST, then flatten everything.
@@ -41,9 +44,9 @@ let flat = List.concat listOfLists  // [1; 2; 3; 4; 5; 6]
     Expected result: [2; 2; 2; 4]
     
     Explanation:
-    - For 2: [1; 2] → keep 2
-    - For 3: [1; 2; 3] → keep 2
-    - For 4: [1; 2; 3; 4] → keep 2, 4
+    - For 2: [1; 2] -> keep 2
+    - For 3: [1; 2; 3] -> keep 2
+    - For 4: [1; 2; 3; 4] -> keep 2, 4
     - Combined: [2; 2; 2; 4]
     
     Print the final result using printfn.

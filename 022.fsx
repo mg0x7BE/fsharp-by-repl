@@ -1,4 +1,7 @@
 // 022.fsx
+// Why List.groupBy?
+// Counting, bucketing, and summarizing almost always start the same way -
+// split elements by a key. groupBy gives you that split in a single call.
 
 // List.groupBy
 // List.groupBy groups elements by a key function.

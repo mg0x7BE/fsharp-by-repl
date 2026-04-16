@@ -1,4 +1,7 @@
 // 024.fsx
+// Why Type Aliases?
+// A raw `string` or `int` tells you nothing about what it represents.
+// Aliases give types meaningful names - EmailAddress, UserId, Celsius.
 
 // Type Aliases
 // Type aliases create new names for existing types.

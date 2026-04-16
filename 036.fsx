@@ -1,6 +1,9 @@
-﻿// 036.fsx
+// 036.fsx
+// Why Map?
+// Looking up values by name, id, or key shows up constantly in real code.
+// Map gives you fast, immutable lookup without the pitfalls of mutable dictionaries.
 
-// Map — Immutable Key-Value Collections
+// Map - Immutable Key-Value Collections
 // Map is F#'s immutable dictionary. It stores key-value pairs
 // and provides fast lookup by key. Keys must be unique.
 // Unlike lists, Maps are optimized for finding values by key.
@@ -18,7 +21,7 @@ let capitals =
 // Map.find throws an exception if the key doesn't exist
 let capitalOfPoland = Map.find "Poland" capitals  // "Warsaw"
 
-// Map.tryFind returns an Option — safe lookup, no exceptions
+// Map.tryFind returns an Option - safe lookup, no exceptions
 let maybeFrance = Map.tryFind "France" capitals    // Some "Paris"
 let maybeItaly = Map.tryFind "Italy" capitals      // None
 
@@ -27,7 +30,7 @@ let hasGermany = Map.containsKey "Germany" capitals  // true
 let hasJapan = Map.containsKey "Japan" capitals      // false
 
 
-// Adding and removing entries (returns a NEW Map — immutable!)
+// Adding and removing entries (returns a NEW Map - immutable!)
 let updated = capitals |> Map.add "Italy" "Rome"
 // capitals still has 4 entries, updated has 5
 
@@ -39,7 +42,7 @@ let corrected = capitals |> Map.add "Poland" "Kraków"
 // Now "Poland" maps to "Kraków" in corrected (capitals unchanged)
 
 
-// Map.count — number of entries
+// Map.count - number of entries
 let size = Map.count capitals  // 4
 
 

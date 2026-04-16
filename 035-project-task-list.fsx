@@ -1,4 +1,4 @@
-﻿// 035-project-task-list.fsx
+// 035-project-task-list.fsx
 
 // PROJECT: Task List Manager
 // Build a simple task list using immutable data and functions.
@@ -26,7 +26,7 @@
 
 
 // ============================================================
-// Part 2: Helper Functions (build these FIRST — used later)
+// Part 2: Helper Functions (build these FIRST - used later)
 // ============================================================
 
 // 4. Write a function formatTask:

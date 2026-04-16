@@ -1,18 +1,21 @@
-﻿// 038.fsx
+// 038.fsx
+// Why Set?
+// Membership tests, deduplication, and set operations (union, intersect)
+// are awkward on lists. Set makes them fast and expressive.
 
-// Set — Immutable Collections of Unique Values
+// Set - Immutable Collections of Unique Values
 // Set is F#'s immutable collection where every element is unique.
 // Sets automatically remove duplicates and keep elements sorted.
 // Use Sets when you care about membership, uniqueness, and set algebra
 // (union, intersection, difference).
 
-// Creating a Set from a list — duplicates are removed automatically
+// Creating a Set from a list - duplicates are removed automatically
 let fruits = Set.ofList [ "Banana"; "Apple"; "Cherry"; "Apple"; "Banana" ]
-// set ["Apple"; "Banana"; "Cherry"]  — sorted, no duplicates!
+// set ["Apple"; "Banana"; "Cherry"]  - sorted, no duplicates!
 
 // Compare with a list: the list keeps everything
 let fruitList = [ "Banana"; "Apple"; "Cherry"; "Apple"; "Banana" ]
-// ["Banana"; "Apple"; "Cherry"; "Apple"; "Banana"] — 5 items, original order
+// ["Banana"; "Apple"; "Cherry"; "Apple"; "Banana"] - 5 items, original order
 
 // Shorthand syntax: set [...]
 let numbers = set [ 3; 1; 4; 1; 5; 9; 2; 6; 5 ]
@@ -22,7 +25,7 @@ let numbers = set [ 3; 1; 4; 1; 5; 9; 2; 6; 5 ]
 let empty: Set<int> = Set.empty
 
 
-// Basic operations — just like Map, everything returns a NEW Set (immutable!)
+// Basic operations - just like Map, everything returns a NEW Set (immutable!)
 let colors = set [ "Red"; "Green"; "Blue" ]
 
 let withYellow = colors |> Set.add "Yellow"      // set ["Blue"; "Green"; "Red"; "Yellow"]
@@ -33,24 +36,24 @@ let size = Set.count colors                        // 3
 let isEmpty = Set.isEmpty colors                   // false
 let emptyCheck = Set.isEmpty Set.empty<int>        // true
 
-// Adding an element that already exists — no change (it's already unique)
+// Adding an element that already exists - no change (it's already unique)
 let same = colors |> Set.add "Red"
-// set ["Blue"; "Green"; "Red"] — identical to colors
+// set ["Blue"; "Green"; "Red"] - identical to colors
 
 
-// Set algebra — this is what makes Sets special!
+// Set algebra - this is what makes Sets special!
 let teamA = set [ "Alice"; "Bob"; "Carol"; "Dave" ]
 let teamB = set [ "Carol"; "Dave"; "Eve"; "Frank" ]
 
-// Union — everyone from EITHER team (combined membership)
+// Union - everyone from EITHER team (combined membership)
 let allPeople = Set.union teamA teamB
 // set ["Alice"; "Bob"; "Carol"; "Dave"; "Eve"; "Frank"]
 
-// Intersect — only people on BOTH teams
+// Intersect - only people on BOTH teams
 let onBoth = Set.intersect teamA teamB
 // set ["Carol"; "Dave"]
 
-// Difference — in first set but NOT in second (asymmetric!)
+// Difference - in first set but NOT in second (asymmetric!)
 let onlyA = Set.difference teamA teamB    // in A but not in B
 // set ["Alice"; "Bob"]
 
@@ -63,12 +66,12 @@ let onlyB = Set.difference teamB teamA    // in B but not in A
 let small = set [ "Carol"; "Dave" ]
 let big = set [ "Alice"; "Bob"; "Carol"; "Dave"; "Eve" ]
 
-let isSmallSubset = Set.isSubset small big     // true — every element of small is in big
-let isBigSuperset = Set.isSuperset big small   // true — big contains every element of small
-let isBigSubset = Set.isSubset big small       // false — big has elements not in small
+let isSmallSubset = Set.isSubset small big     // true - every element of small is in big
+let isBigSuperset = Set.isSuperset big small   // true - big contains every element of small
+let isBigSubset = Set.isSubset big small       // false - big has elements not in small
 
 
-// Transformations — same pattern as List and Map
+// Transformations - same pattern as List and Map
 let nums = set [ 1; 2; 3; 4; 5; 6; 7; 8 ]
 
 let evens = nums |> Set.filter (fun n -> n % 2 = 0)
@@ -77,11 +80,11 @@ let evens = nums |> Set.filter (fun n -> n % 2 = 0)
 let total = Set.fold (fun acc n -> acc + n) 0 nums
 // 36
 
-// Set.map — transforms elements. WARNING: may shrink the set if mapping creates duplicates!
+// Set.map - transforms elements. WARNING: may shrink the set if mapping creates duplicates!
 let modulo3 = nums |> Set.map (fun n -> n % 3)
-// set [0; 1; 2]  — 8 elements mapped, but only 3 unique results!
+// set [0; 1; 2]  - 8 elements mapped, but only 3 unique results!
 
-// Set.iter — side effects, just like List.iter and Map.iter
+// Set.iter - side effects, just like List.iter and Map.iter
 nums |> Set.iter (fun n -> printf $"{n} ")
 // Prints: 1 2 3 4 5 6 7 8
 
