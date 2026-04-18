@@ -1,5 +1,11 @@
-![stars](https://img.shields.io/github/stars/mg0x7BE/fsharp-by-repl?style=flat)
-![license](https://img.shields.io/github/license/mg0x7BE/fsharp-by-repl)
+![GitHub repo size](https://img.shields.io/github/repo-size/mg0x7BE/fsharp-by-repl)
+![GitHub License](https://img.shields.io/github/license/mg0x7BE/fsharp-by-repl)
+![GitHub Created At](https://img.shields.io/github/created-at/mg0x7BE/fsharp-by-repl)
+![GitHub forks](https://img.shields.io/github/forks/mg0x7BE/fsharp-by-repl)
+![GitHub Repo stars](https://img.shields.io/github/stars/mg0x7BE/fsharp-by-repl)
+![Windows](https://img.shields.io/badge/Windows-0078D6?logo=windows&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)
+![macOS](https://img.shields.io/badge/macOS-000000?logo=apple&logoColor=white)
 
 # F# by REPL
 
